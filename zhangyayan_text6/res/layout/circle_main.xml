@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp" >
+
+    <!-- 头像 -->
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="48dip"
+        android:layout_height="48dip"
+        android:src="@drawable/asde" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SomeBody" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="4"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:text="你的影子在每一个角" />
+
+        <TextView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="显示更多"
+            android:visibility="gone" />
+      <!--   <GridView
+			android:id="@+id/gridView"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:numColumns="3" />
+--> 
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/publish_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="2天前" />
+
+            <ImageButton
+                android:id="@+id/imgButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/safe_info_game_event_small"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/publish_time"
+                android:paddingLeft="15dip"
+                android:text="来自h60_01相机" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bbbbbbbbbbbbbbbbb"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/username_last"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/bbbbbbbbbbbbbbbbb"
+                android:text="寂寞" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="窗外有朵樱花， 开得那么灿烂" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="70.1dip"
+        android:layout_height="fill_parent" />
+
+    <!--  -->
+
+</LinearLayout>
